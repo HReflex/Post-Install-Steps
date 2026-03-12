@@ -8,3 +8,6 @@ sh -c "$(curl -sS https://vencord.dev/install.sh)"
 # In .ssh add file "config" and add
 Host *
   IdentityAgent /home/hreflex/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock
+
+# In .bashrc add to end
+fastfetch
