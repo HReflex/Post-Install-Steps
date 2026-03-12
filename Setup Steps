@@ -1,0 +1,10 @@
+sudo rpm-ostree install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm && sudo reboot
+
+sudo rpm-ostree install libavcodec-freeworld fastfetch htop gnome-tweaks just ansible steam-devices && sudo reboot
+
+# Install Discord then
+sh -c "$(curl -sS https://vencord.dev/install.sh)"
+
+# In .ssh add file "config" and add
+Host *
+  IdentityAgent /home/hreflex/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock
