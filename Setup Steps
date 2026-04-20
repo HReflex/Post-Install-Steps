@@ -11,3 +11,10 @@ Host *
 
 # In .bashrc add to end
 fastfetch
+
+
+
+# For laptop setup specifically
+
+# Turns off backlight dimming
+sudo rpm-ostree kargs --append='amdgpu.abmlevel=0'
